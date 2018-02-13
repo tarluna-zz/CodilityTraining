@@ -4,7 +4,7 @@ using System.Linq;
 namespace CodilityTraining {
     class Program {
         static void Main (string[] args) {
-            //System.Console.WriteLine (BinaryGap (529));
+            BinaryGap (529);
             OddOccurency (new int[] { 9, 3, 9, 3, 9, 7, 9 });
         }
 
