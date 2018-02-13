@@ -1,0 +1,10 @@
+/Users/tarluna/Documents/Projects/C#/CodilityTraining/CodilityTraining/bin/Debug/netcoreapp2.0/CodilityTraining.deps.json
+/Users/tarluna/Documents/Projects/C#/CodilityTraining/CodilityTraining/bin/Debug/netcoreapp2.0/CodilityTraining.runtimeconfig.json
+/Users/tarluna/Documents/Projects/C#/CodilityTraining/CodilityTraining/bin/Debug/netcoreapp2.0/CodilityTraining.runtimeconfig.dev.json
+/Users/tarluna/Documents/Projects/C#/CodilityTraining/CodilityTraining/bin/Debug/netcoreapp2.0/CodilityTraining.dll
+/Users/tarluna/Documents/Projects/C#/CodilityTraining/CodilityTraining/bin/Debug/netcoreapp2.0/CodilityTraining.pdb
+/Users/tarluna/Documents/Projects/C#/CodilityTraining/CodilityTraining/obj/Debug/netcoreapp2.0/CodilityTraining.csproj.CoreCompileInputs.cache
+/Users/tarluna/Documents/Projects/C#/CodilityTraining/CodilityTraining/obj/Debug/netcoreapp2.0/CodilityTraining.AssemblyInfoInputs.cache
+/Users/tarluna/Documents/Projects/C#/CodilityTraining/CodilityTraining/obj/Debug/netcoreapp2.0/CodilityTraining.AssemblyInfo.cs
+/Users/tarluna/Documents/Projects/C#/CodilityTraining/CodilityTraining/obj/Debug/netcoreapp2.0/CodilityTraining.dll
+/Users/tarluna/Documents/Projects/C#/CodilityTraining/CodilityTraining/obj/Debug/netcoreapp2.0/CodilityTraining.pdb
