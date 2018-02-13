@@ -1,9 +1,11 @@
 ﻿using System;
+using System.Linq;
 
 namespace CodilityTraining {
     class Program {
         static void Main (string[] args) {
-            System.Console.WriteLine (BinaryGap (529));
+            //System.Console.WriteLine (BinaryGap (529));
+            OddOccurency (new int[] { 9, 3, 9, 3, 9, 7, 9 });
         }
 
         public static int BinaryGap (int N) {
@@ -19,6 +21,14 @@ namespace CodilityTraining {
                 }
             }
             return result;
+        }
+
+        public static int OddOccurency (int[] A) {
+            //return A.Aggregate((x, y) => x ^ y);
+            A = A.OrderBy (t => t).ToArray ();
+            int i;
+            for (i = 0; i < A.Length - 1 && A[i] == A[i + 1]; i += 2);
+            return A[i];
         }
     }
 }
