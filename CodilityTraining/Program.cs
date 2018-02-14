@@ -14,7 +14,7 @@ namespace CodilityTraining {
             TapeEquilibrium (c);
             CodilityChallenge (d);
         }
-
+        #region Challenges
         public static int CodilityChallenge (int[] A) {
             int result = int.MinValue, longestStreak = 1;
 
@@ -27,37 +27,9 @@ namespace CodilityTraining {
 
             return result;
         }
+        #endregion
 
-        public static int TapeEquilibrium (int[] A) {
-            int currentMin = Int32.MaxValue, currentValue = 0, arrayLength = A.Length, max = A.Sum ();
-
-            if (arrayLength < 3) {
-                return 0;
-            }
-
-            for (int i = arrayLength - 1; i >= 0; i--) {
-                max = max - A[i];
-                currentValue += A[i];
-                currentMin = Math.Min (currentMin, Math.Abs (max - currentValue));
-            }
-
-            return currentMin;
-        }
-
-        public static int[] CyclicRotation (int[] A, int K) {
-            int arrayLength = A.Length;
-            int[] reversedArray = new int[arrayLength];
-
-            for (int i = 0; i < arrayLength; i++) {
-                if (i + K >= arrayLength)
-                    reversedArray[(i + K) % arrayLength] = A[i];
-                else
-                    reversedArray[i + K] = A[i];
-
-            }
-            return reversedArray;
-        }
-
+        #region Lessons Region
         public static int BinaryGap (int N) {
             string binary = Convert.ToString (N, 2);
             int result = 0, current = 0;
@@ -80,5 +52,36 @@ namespace CodilityTraining {
             for (i = 0; i < A.Length - 1 && A[i] == A[i + 1]; i += 2);
             return A[i];
         }
+
+        public static int[] CyclicRotation (int[] A, int K) {
+            int arrayLength = A.Length;
+            int[] reversedArray = new int[arrayLength];
+
+            for (int i = 0; i < arrayLength; i++) {
+                if (i + K >= arrayLength)
+                    reversedArray[(i + K) % arrayLength] = A[i];
+                else
+                    reversedArray[i + K] = A[i];
+
+            }
+            return reversedArray;
+        }
+
+        public static int TapeEquilibrium (int[] A) {
+            int currentMin = Int32.MaxValue, currentValue = 0, arrayLength = A.Length, max = A.Sum ();
+
+            if (arrayLength < 3) {
+                return 0;
+            }
+
+            for (int i = arrayLength - 1; i >= 0; i--) {
+                max = max - A[i];
+                currentValue += A[i];
+                currentMin = Math.Min (currentMin, Math.Abs (max - currentValue));
+            }
+
+            return currentMin;
+        }
+        #endregion
     }
 }
