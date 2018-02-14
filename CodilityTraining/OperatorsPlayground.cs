@@ -10,6 +10,7 @@ namespace CodilityTraining {
             Console.WriteLine (GetIntBinaryString (5550));
             Console.WriteLine (GetIntBinaryString (800));
             Console.WriteLine (GetIntBinaryString (a));
+            
             Console.WriteLine ();
         }
         public static void test () {
@@ -21,7 +22,7 @@ namespace CodilityTraining {
                 // i is incremented, but the conditional
                 // expression evaluates to false, so
                 // this block does not execute.
-                string t = "";
+                //string t = "";
             }
 
             checked {

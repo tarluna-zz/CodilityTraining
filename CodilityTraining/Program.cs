@@ -13,6 +13,7 @@ namespace CodilityTraining {
             CyclicRotation (b, 3);
             TapeEquilibrium (c);
             CodilityChallenge (d);
+            Console.WriteLine (FrogJump (10, 85, 30));
         }
         #region Challenges
         public static int CodilityChallenge (int[] A) {
@@ -81,6 +82,13 @@ namespace CodilityTraining {
             }
 
             return currentMin;
+        }
+
+        public static int FrogJump (int X, int Y, int D) {
+            double path = Y - X;
+            // return Convert.ToInt32 (Math.Ceiling ((path / D)));
+            var t = (Y - X + D - 1);
+             return t/D;
         }
         #endregion
     }
